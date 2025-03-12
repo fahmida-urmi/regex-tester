@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Tester</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+    <h1 class="text-2xl font-bold text-center mb-4">Regex Tester</h1>
+
+    <!-- Regex Input -->
+    <div class="mb-4">
+      <label for="regexInput" class="block text-lg mb-2">Enter Regular Expression</label>
+      <input type="text" id="regexInput" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your regex here..." />
+    </div>
+
+    <!-- Text Input -->
+    <div class="mb-6">
+      <label for="textInput" class="block text-lg mb-2">Enter Text to Test</label>
+      <textarea id="textInput" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Enter text to test against the regex..."></textarea>
+    </div>
+
+    <!-- Test Button -->
+    <button id="testRegexButton" class="w-full p-3 bg-blue-500 text-white rounded hover:bg-blue-600">Test Regex</button>
+
+    <!-- Results Section -->
+    <div id="resultSection" class="mt-6">
+      <h2 class="text-xl font-bold mb-2">Test Results</h2>
+      <div id="testResults" class="text-lg"></div>
+    </div>
+
+    <!-- Highlighted Matches -->
+    <div id="highlightedText" class="mt-4 p-3 bg-gray-100 border border-gray-300 rounded">
+      <p class="text-gray-700">Highlighted Matches will appear here...</p>
+    </div>
+  </div>
+
+  <script src="./app.js"> </script>
+</body>
+</html>
